@@ -1,0 +1,9 @@
+# built files
+dist/
+
+# typescript incremental build
+tsconfig.tsbuildinfo
+
+# public folder
+public/*
+!public/.gitkeep
