@@ -23,11 +23,15 @@ phases:
   install:
     #If you use the Ubuntu standard image 2.0 or later, you must specify runtime-versions.
     #If you specify runtime-versions and use an image other than Ubuntu standard image 2.0, the build fails.
-    runtime-versions:
-      nodejs: 17
-      # name: version
+    # runtime-versions:
+    #   nodejs: 14 the latest
+    # name: version
     commands:
+      - sudo yum install -y gcc-c++ make
+      - curl -fsSL https://rpm.nodesource.com/setup_17.x | sudo -E bash -
+      - sudo yum install -y nodejs
       - cd $CODEBUILD_SRC_DIR/
+      - npm config ls
       - npm i
   #pre_build:
   #commands:
