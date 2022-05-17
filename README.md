@@ -10,11 +10,13 @@ Server-side Rendering not supported. Better try `Next.js` or something similar.
 - backend: `jest`
 
 
-## `baseUrl` tricks
+## `baseUrl` tricks running built `*.js` files after `tsc`
 
 `pacakge.json` `"import"` config:
 
 https://nodejs.org/api/packages.html#main-entry-point-export
+
+This is for the backend, `vite` handles everything for frontend.
 
 Use `#` as the prefix of the import paths,
 the `tsc`-built `*.js` files will keep the import path and apply the `"import"` config in `package.json`.
