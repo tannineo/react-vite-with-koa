@@ -2,7 +2,7 @@
 dist/
 
 # typescript incremental build
-tsconfig.tsbuildinfo
+*.tsbuildinfo
 
 # public folder
 public/*
