@@ -1,7 +1,7 @@
 import { Link, Routes, Route } from 'react-router-dom'
 
-import Home from 'src/components/Home'
-import Converter from 'src/components/Converter'
+import Home from '@src/components/Home'
+import Converter from '@src/components/Converter'
 
 import './App.css'
 
