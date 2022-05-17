@@ -34,9 +34,6 @@ phases:
   # - command
   # - command
   build:
-    runtime-versions:
-      nodejs: 17
-      # name: version
     commands:
       - cd $CODEBUILD_SRC_DIR/
       - npm test
