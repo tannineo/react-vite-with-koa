@@ -31,8 +31,11 @@ phases:
       - curl -fsSL https://rpm.nodesource.com/setup_17.x | sudo -E bash -
       - sudo yum install -y nodejs
       - cd $CODEBUILD_SRC_DIR/
+      - node -v
       - npm config ls
       - npm i
+      - npm test
+
   #pre_build:
   #commands:
   # - command
@@ -40,8 +43,7 @@ phases:
   build:
     commands:
       - cd $CODEBUILD_SRC_DIR/
-      - npm test
-  #post_build:
+      - echo "???"
   #commands:
   # - command
   # - command
