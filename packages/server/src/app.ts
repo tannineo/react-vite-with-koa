@@ -3,7 +3,7 @@ import * as path from 'path'
 import StaticServe from 'koa-static'
 import Mount from 'koa-mount'
 
-import world from '@src/helpers/hello'
+import world from '#src/helpers/hello'
 import router from './routes'
 
 const PORT = 3000

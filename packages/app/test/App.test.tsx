@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { MemoryRouter } from 'react-router-dom'
 
-import App from '@src/App'
+import App from '#src/App'
 import { render, screen } from './utils/test-utils'
 
 describe('App', () => {
