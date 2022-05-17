@@ -27,9 +27,6 @@ phases:
     #   nodejs: 14 the latest
     # name: version
     commands:
-      - sudo yum install -y gcc-c++ make
-      - curl -fsSL https://rpm.nodesource.com/setup_17.x | sudo -E bash -
-      - sudo yum install -y nodejs
       - cd $CODEBUILD_SRC_DIR/
       - node -v
       - npm config ls
