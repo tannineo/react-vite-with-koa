@@ -31,7 +31,6 @@ phases:
       - node -v
       - npm config ls
       - npm i
-      - npm test
 
   #pre_build:
   #commands:
@@ -40,7 +39,7 @@ phases:
   build:
     commands:
       - cd $CODEBUILD_SRC_DIR/
-      - echo "???"
+      - npm test
   #commands:
   # - command
   # - command
