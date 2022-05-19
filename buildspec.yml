@@ -53,8 +53,8 @@ phases:
   #file-format: JunitXml | CucumberJson
 artifacts:
   files:
-    - '$CODEBUILD_SRC_DIR/packages/server/dist'
-    - '$CODEBUILD_SRC_DIR/packages/public/public'
+    - packages/server/dist
+    - packages/public/public
   name: test-artifect-$(date +%Y-%m-%d)
 #discard-paths: yes
 #base-directory: location
