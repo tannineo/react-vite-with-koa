@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+# files:
+#   -
+# Hooks:
+#   - BeforeInstall: "LambdaFunctionToValidateBeforeInstall"
+#   - AfterInstall: "LambdaFunctionToValidateAfterInstall"
+#   - AfterAllowTestTraffic: "LambdaFunctionToValidateAfterTestTrafficStarts"
+#   - BeforeAllowTraffic: "LambdaFunctionToValidateBeforeAllowingProductionTraffic"
+#   - AfterAllowTraffic: "LambdaFunctionToValidateAfterAllowingProductionTraffic"
