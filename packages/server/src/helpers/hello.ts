@@ -1,3 +1,3 @@
-const world = () => 'Hello World!'
+const world = () => 'Hello World!?'
 
 export default world
