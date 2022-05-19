@@ -50,8 +50,8 @@ phases:
   #file-format: JunitXml | CucumberJson
 artifacts:
   files:
-    - packages/server/dist
-    - packages/server/public
+    - packages/server/dist/**/*
+    - packages/server/public/**/*
   name: test-artifect-$(date +%Y-%m-%d)
 #discard-paths: yes
 #base-directory: location
