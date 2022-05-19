@@ -30,3 +30,16 @@ Check [`buildspec.yml`](./buildspec.yml) and [`appspec.yml`](./appspec.yml) for 
 Reference:
 
 - https://www.youtube.com/watch?v=Buh3GjHPmjo
+
+EC2 user data:
+
+```
+#!/bin/bash
+sudo yum -y update
+sudo yum -y install ruby
+sudo yum -y install wget
+cd /home/ec2-user
+wget https://aws-codedeploy-eu-west-2.s3.amazonaws.com/latest/install
+sudo chmod +x ./install
+sudo ./install auto
+```
