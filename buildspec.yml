@@ -32,14 +32,14 @@ phases:
       - npm config ls
       - npm i
 
-  #pre_build:
-  #commands:
-  # - command
-  # - command
-  build:
+  pre_build:
     commands:
       - cd $CODEBUILD_SRC_DIR/
       - npm test
+  build:
+    commands:
+      - cd $CODEBUILD_SRC_DIR/
+      - npm run build
   #commands:
   # - command
   # - command
@@ -53,8 +53,8 @@ phases:
   #file-format: JunitXml | CucumberJson
 artifacts:
   files:
-    - '$CODEBUILD_SRC_DIR/packages/dist'
-    - '$CODEBUILD_SRC_DIR/packages/public'
+    - '$CODEBUILD_SRC_DIR/packages/server/dist'
+    - '$CODEBUILD_SRC_DIR/packages/public/public'
   name: test-artifect-$(date +%Y-%m-%d)
 #discard-paths: yes
 #base-directory: location
