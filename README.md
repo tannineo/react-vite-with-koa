@@ -22,3 +22,11 @@ Use `#` as the prefix of the import paths,
 the `tsc`-built `*.js` files will keep the import path and apply the `"import"` config in `package.json`.
 
 For details, check `package.json` and `tsconfig.build.json`.
+
+## AWS CodePipeline & CodeDeploy support
+
+Check [`buildspec.yml`](./buildspec.yml) and [`appspec.yml`](./appspec.yml) for details.
+
+Reference:
+
+- https://www.youtube.com/watch?v=Buh3GjHPmjo
