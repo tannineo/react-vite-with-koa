@@ -40,9 +40,6 @@ phases:
     commands:
       - cd $CODEBUILD_SRC_DIR/
       - npm run build
-  #commands:
-  # - command
-  # - command
   #reports:
   #report-name-or-arn:
   #files:
@@ -54,7 +51,7 @@ phases:
 artifacts:
   files:
     - packages/server/dist
-    - packages/public/public
+    - packages/server/public
   name: test-artifect-$(date +%Y-%m-%d)
 #discard-paths: yes
 #base-directory: location
