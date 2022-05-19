@@ -48,11 +48,14 @@ phases:
   #base-directory: location
   #discard-paths: yes
   #file-format: JunitXml | CucumberJson
-artifacts:
-  files:
-    - packages/server/dist/**/*
-    - packages/server/public/**/*
-  name: test-artifect-$(date +%Y-%m-%d)
+# WARN no use with buildArtifact, so disable artifacts config,
+# WARN use sourceArtifact (source code) containing appsepc.yml
+# artifacts:
+#   files:
+#     - packages/server/dist/**/*
+#     - packages/server/public/**/*
+#   name: test-artifect-$(date +%Y-%m-%d)
+
 #discard-paths: yes
 #base-directory: location
 #cache:
