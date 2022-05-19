@@ -6,7 +6,7 @@ import Mount from 'koa-mount'
 import world from '#src/helpers/hello'
 import router from './routes'
 
-const PORT = 3000
+const PORT = 4000
 
 const staticServer = new Koa()
 
