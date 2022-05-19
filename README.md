@@ -38,6 +38,7 @@ EC2 user data:
 sudo yum -y update
 sudo yum -y install ruby
 sudo yum -y install wget
+sudo yum -y install git
 cd /home/ec2-user
 wget https://aws-codedeploy-eu-west-2.s3.amazonaws.com/latest/install
 sudo chmod +x ./install
