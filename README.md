@@ -22,3 +22,7 @@ Use `#` as the prefix of the import paths,
 the `tsc`-built `*.js` files will keep the import path and apply the `"import"` config in `package.json`.
 
 For details, check `package.json` and `tsconfig.build.json`.
+
+## aws related settings
+
+Check the `aws` branch.
